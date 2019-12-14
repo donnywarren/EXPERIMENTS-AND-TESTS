@@ -8,3 +8,11 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
+
+
+.text-align {
+  height: 200px;
+  width: 400px;
+  border: 1px solid black;
+
+}
