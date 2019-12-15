@@ -1,4 +1,4 @@
-html {
+/* html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -7,7 +7,7 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  }
+  } */
 
 
 
@@ -24,6 +24,7 @@ body {
 }
 
 #content {
+/* background and width are not necessary.  they are here for demonstration purposes */
   background: #06c;
   width: 420px;
   margin-left: auto;
@@ -32,4 +33,37 @@ body {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+}
+
+
+/* <!-- NEXT PROJECT -->
+<!-- USE FLOAT AND TRANSFORM TO CREATE POLAROIDS --> */
+
+.full-panel {
+  height: 500px;
+  background-color: #eeeeee;
+  margin: 30px;
+}
+
+div.container {
+  padding: 100px 250px 100px 250px;
+}
+
+div.polaroid {
+  width: 284px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #bfbfbf;
+  font-size: 14px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div.rotate-right {
+  float: left;
+  transform: rotate(8deg);
+}
+
+div.rotate-left {
+  float: left;
+  transform: rotate(-8deg);
 }
