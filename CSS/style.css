@@ -60,10 +60,14 @@ div.polaroid {
 
 div.rotate-right {
   float: left;
-  transform: rotate(8deg);
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
 }
 
 div.rotate-left {
   float: left;
+  -ms-transform: rotate(-8deg); /*IE 9*/
+  -webkit-transform: rotate(-8deg); /*Safari */
   transform: rotate(-8deg);
 }
