@@ -35,6 +35,62 @@ body {
   text-align: center;
 }
 
+/* DISAPPEARING BANNER BOX */
+
+.black-ad-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 54px;
+  font-size: 12px;
+}
+
+.black-ad-banner {
+    -moz-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 10s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+
+.shop-white {
+  color: white;
+  font-size: 10px;
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+i.fa-chevron-left {
+  font-size: 16px;
+  padding-left: 150px;
+}
+i.fa-chevron-right {
+  font-size: 16px;
+  padding-right: 150px;
+}
+
 
 /* <!-- NEXT PROJECT -->
 <!-- USE FLOAT AND TRANSFORM TO CREATE POLAROIDS --> */
