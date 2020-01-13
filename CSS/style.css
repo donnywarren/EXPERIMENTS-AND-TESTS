@@ -152,3 +152,56 @@ div.rotate-left {
   align-items: center;
   color: green;
   }
+
+
+
+/* ANIMATION TO ROTATE SIZE MOVE */
+
+
+.razzle-dazzle-flexbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+.razzle-dazzle-container {
+  width: 800px;
+  height: 600px;
+  margin: 50px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+
+
+
+
+.razzle-dazzle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color:red; margin-left:400px; margin-top:250px;}
+  50%  {background-color:red; height:400px; margin-left:calc(50% - 200px); margin-bottom:calc(50% - 50px); transform: rotate(720deg)}
+  100% {background-color:red; height:100px; width:100px; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color:red; margin-left:400px; margin-top:250px;}
+  50%  {background-color:red; height:400px; width:400px; margin-left:calc(50% - 200px); margin-bottom:calc(50% - 50px); transform: rotate(720deg)}
+  100% {background-color:red; height:100px; width:100px; left:0px; top:0px;}
+}
+
+
+  /* testing */
